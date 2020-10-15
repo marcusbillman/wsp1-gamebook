@@ -10,11 +10,7 @@ router.get('/:id', function(req, res, next) {
   
     pool.query(sqlQuery, [req.params.id], function (err, result, fields) {
       if (err) throw err;
-      res.json({
-        status: 200,
-        id: req.params.id,
-        result: result
-      });
+      res.render('page', { page: result[0] });
     });
   
     connection.release();
