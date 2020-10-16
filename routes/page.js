@@ -1,20 +1,21 @@
 var express = require('express');
 var router = express.Router();
-const pool = require('../models/db');
+const { query } = require('../models/db');
 
-const sqlQuery = 'SELECT * FROM pages WHERE page_id = ?';
+router.get('/:id', async function(req, res, next) {
+  try {
+    const page = await query(
+      'SELECT * FROM pages WHERE page_id = ?',
+      req.params.id
+    );
 
-router.get('/:id', function(req, res, next) {
-  pool.getConnection((error, connection) => {
-    if (error) throw error;
-  
-    pool.query(sqlQuery, [req.params.id], function (err, result, fields) {
-      if (err) throw err;
-      res.render('page', { page: result[0] });
+    res.render('page', {
+      page: page[0]
     });
-  
-    connection.release();
-  });
+  } catch (e) {
+    console.error(e);
+    next(e);
+  }
 });
 
 module.exports = router;
