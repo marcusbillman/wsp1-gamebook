@@ -3,3 +3,5 @@ extends layout
 block content
   h1 Sida #{page.page_id}
   p= page.body
+  each link in links
+    a(href='/' + link.to_page_id)= link.text ? link.text : 'Nästa'

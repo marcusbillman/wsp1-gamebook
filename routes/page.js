@@ -9,8 +9,14 @@ router.get('/:id', async function(req, res, next) {
       req.params.id
     );
 
+    const links = await query(
+      'SELECT * FROM links WHERE from_page_id = ?',
+      req.params.id
+    );
+    
     res.render('page', {
-      page: page[0]
+      page: page[0],
+      links: links
     });
   } catch (e) {
     console.error(e);
