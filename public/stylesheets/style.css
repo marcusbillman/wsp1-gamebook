@@ -25,7 +25,7 @@ main {
   margin: 0 auto;
   padding: 4.8rem;
   background: white; }
-  .container::before, .container::after {
+  .container--paper::before, .container--paper::after {
     content: '';
     position: absolute;
     display: block;
@@ -34,11 +34,11 @@ main {
     height: 44px;
     background-size: cover;
     background-repeat: no-repeat; }
-  .container::before {
+  .container--paper::before {
     top: 0;
     transform: translateY(-100%);
     background-image: url("/images/torn-paper-1.png"); }
-  .container::after {
+  .container--paper::after {
     bottom: 0;
     transform: translateY(100%) rotate(0.5turn);
     background-image: url("/images/torn-paper-2.png"); }
@@ -57,6 +57,10 @@ p {
 
 a {
   color: inherit; }
+
+.navbar {
+  max-width: 1400px;
+  padding: 1.6rem 4rem; }
 
 .button {
   display: inline-flex;
