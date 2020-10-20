@@ -10,4 +10,7 @@ block content
       a(href='/') Tillbaka till startsidan
     else
       each link in links
-        a.button(href='/' + link.to_page_id)= link.text ? link.text : 'Nästa'
+        if link.text
+          a.button(href='/' + link.to_page_id)= link.text
+        else
+          a.button.button--next(href='/' + link.to_page_id) Nästa
