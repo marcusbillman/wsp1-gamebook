@@ -45,4 +45,9 @@ a {
     content: 'arrow_forward';
     margin-left: 0.8rem; }
 
+.footer__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
