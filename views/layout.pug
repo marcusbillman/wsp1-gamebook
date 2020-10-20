@@ -6,8 +6,11 @@ html
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    header
-      p Navbar
+    nav.navbar
+      a.navbar__logo Den fula ankungen &ndash; soloäventyr
+      if page
+        a.button.button--small(href='/') Avsluta äventyret
+      p.navbar__credit av Marcus Billman
     main
       .container
         block content
