@@ -106,6 +106,8 @@ a {
     content: 'replay'; }
   .button--home::before {
     content: 'home'; }
+  .button--quit::before {
+    content: 'close'; }
 
 .header {
   display: flex;
