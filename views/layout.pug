@@ -7,13 +7,23 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     nav.navbar.container
-      a.navbar__logo Den fula ankungen &ndash; soloäventyr
+      a.navbar__logo(href="/") Den fula ankungen &ndash; soloäventyr
       if page
         a.button.button--small.button--quit(href='/') Avsluta äventyret
-      p.navbar__credit av Marcus Billman
+      p.navbar__credit
+        | av
+        |
+        a(href='https://github.com/marcusbillman') Marcus Billman
     main
       .container.container--paper
         block content
     footer.footer
-      p.footer__text Design och kod av Marcus Billman. Sagans text är en bearbetad version av text från Sagosidan.
+      p.footer__text
+        | Design och kod av
+        |
+        a(href='https://github.com/marcusbillman') Marcus Billman
+        | . Sagans text är en bearbetad version av text från
+        |
+        a(href='https://sagosidan.se/den-fula-ankungen/') Sagosidan
+        | .
       p.footer__text Denna webbplats utvecklas enbart i utbildningssyfte.
