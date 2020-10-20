@@ -1,7 +1,9 @@
 extends layout
 
 block content
-  h1 Sida #{page.page_id}
+  .heading
+    h1 Sida #{page.page_id}
+    a.button.button--small.button--restart(href='/1') Börja om
   p= page.body
   .links
     if page.is_ending

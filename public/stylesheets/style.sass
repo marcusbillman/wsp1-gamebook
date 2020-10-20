@@ -48,10 +48,24 @@ a
   &:hover
     background: $clr-eggshell
     border-color: $clr-mustard
-  &--next::after
+  &--small
+    font-size: 1.6rem
+    padding: 0.8rem 2rem
+  &::before
     font-family: 'Material Icons'
-    content: 'arrow_forward'
+    margin-right: 0.8rem
+  &::after
+    font-family: 'Material Icons'
     margin-left: 0.8rem
+  &--next::after
+    content: 'arrow_forward'
+  &--restart::before
+    content: 'replay'
+
+.heading
+  display: flex
+  align-items: center
+  justify-content: space-between
 
 .links
   display: flex
