@@ -62,7 +62,8 @@ a {
 
 .navbar {
   max-width: 1400px;
-  padding: 1.6rem 4rem;
+  height: 6.4rem;
+  padding: 0 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
