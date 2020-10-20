@@ -47,6 +47,11 @@ a {
     content: 'arrow_forward';
     margin-left: 0.8rem; }
 
+.links {
+  display: flex; }
+  .links .button:nth-child(2) {
+    margin-left: 2rem; }
+
 .footer__text {
   font-size: 1.6rem;
   font-weight: 400;
