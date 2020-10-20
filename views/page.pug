@@ -7,7 +7,7 @@ block content
   p= page.body
   .button-wrapper
     if page.is_ending
-      a(href='/') Tillbaka till startsidan
+      a.button.button--home(href='/') Tillbaka till startsidan
     else
       each link in links
         if link.text

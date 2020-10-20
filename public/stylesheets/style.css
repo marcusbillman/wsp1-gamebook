@@ -86,6 +86,8 @@ a {
     content: 'arrow_forward'; }
   .button--restart::before {
     content: 'replay'; }
+  .button--home::before {
+    content: 'home'; }
 
 .header {
   display: flex;
