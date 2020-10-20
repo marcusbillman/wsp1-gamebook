@@ -12,10 +12,28 @@ body {
   background: #FDEEB9; }
 
 .container {
+  position: relative;
   max-width: 900px;
   margin: 0 auto;
   padding: 3.2rem 4.8rem;
   background: white; }
+  .container::before, .container::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .container::before {
+    top: 0;
+    transform: translateY(-100%);
+    background-image: url("/images/torn-paper-1.png"); }
+  .container::after {
+    bottom: 0;
+    transform: translateY(100%) rotate(0.5turn);
+    background-image: url("/images/torn-paper-2.png"); }
 
 h1 {
   font-family: 'Dancing Script', cursive;
