@@ -26,6 +26,7 @@ a
 
 .button
   display: inline-flex
+  align-items: center
   font-family: 'Quicksand', sans-serif
   font-size: 2rem
   font-weight: 600
@@ -33,3 +34,10 @@ a
   padding: 1.6rem 6.4rem
   border: 2px solid $clr-grey
   border-radius: 1000px
+  &:hover
+    background: $clr-eggshell
+    border-color: $clr-mustard
+  &--next::after
+    font-family: 'Material Icons'
+    content: 'arrow_forward'
+    margin-left: 0.8rem
