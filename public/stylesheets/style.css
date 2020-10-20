@@ -20,8 +20,9 @@ body {
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 5.6rem;
-  color: #974C06;
-  margin-bottom: 3.2rem; }
+  color: #974C06; }
+  h1.small {
+    font-size: 3.8rem; }
 
 p {
   font-size: 2.2rem;
@@ -58,10 +59,11 @@ a {
   .button--restart::before {
     content: 'replay'; }
 
-.heading {
+.header {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 3.2rem; }
 
 .links {
   display: flex;

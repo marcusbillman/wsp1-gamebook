@@ -27,7 +27,8 @@ h1
   font-family: 'Dancing Script', cursive
   font-size: 5.6rem
   color: $clr-bronze
-  margin-bottom: 3.2rem
+  &.small
+    font-size: 3.8rem
 
 p
   font-size: 2.2rem
@@ -64,10 +65,11 @@ a
   &--restart::before
     content: 'replay'
 
-.heading
+.header
   display: flex
   align-items: center
   justify-content: space-between
+  margin-bottom: 3.2rem
 
 .links
   display: flex
