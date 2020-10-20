@@ -68,6 +68,7 @@ a
   color: inherit
 
 .navbar
+  top: 3.2rem
   max-width: 1400px
   height: 6.4rem
   padding: 0 4rem
@@ -84,6 +85,18 @@ a
     font-size: 1.6rem
     font-weight: 400
     margin-bottom: 0
+  &::before, &::after
+    content: ''
+    position: absolute
+    display: block
+    top: calc(-3.2rem - 3px)
+    height: 3.2rem
+    width: 4px
+    border-left: 4px dotted $clr-mustard
+  &::before
+    left: 12.8rem
+  &::after
+    right: 12.8rem
 
 .button
   display: inline-flex
