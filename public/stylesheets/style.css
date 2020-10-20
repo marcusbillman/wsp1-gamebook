@@ -6,10 +6,18 @@ html {
   padding: 0; }
 
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   color: #18005B;
   background: #FDEEB9; }
+
+main {
+  display: flex;
+  align-items: center;
+  flex: 1; }
 
 .container {
   position: relative;
