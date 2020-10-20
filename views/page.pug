@@ -5,7 +5,7 @@ block content
     h1.small Sida #{page.page_id}
     a.button.button--small.button--restart(href='/1') Börja om
   p= page.body
-  .links
+  .button-wrapper
     if page.is_ending
       a(href='/') Tillbaka till startsidan
     else
