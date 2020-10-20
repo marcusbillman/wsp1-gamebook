@@ -1,11 +1,19 @@
 html {
   font-size: 62.5%; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   color: #18005B;
   background: #FDEEB9; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto; }
 
 h1 {
   font-family: 'Dancing Script', cursive;
