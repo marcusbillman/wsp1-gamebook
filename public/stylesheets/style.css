@@ -4,7 +4,8 @@ html {
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
-  color: #18005B; }
+  color: #18005B;
+  background: #FDEEB9; }
 
 h1 {
   font-family: 'Dancing Script', cursive;
