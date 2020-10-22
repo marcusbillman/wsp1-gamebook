@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.18, for Win64 (x86_64)
 --
--- Host: localhost    Database: gamebook
+-- Host: 127.0.0.1    Database: gamebook
 -- ------------------------------------------------------
 -- Server version	8.0.21-0ubuntu0.20.04.4
 
@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `from_page_id` int unsigned NOT NULL,
   `to_page_id` int unsigned NOT NULL,
   PRIMARY KEY (`link_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `links` (
 
 LOCK TABLES `links` WRITE;
 /*!40000 ALTER TABLE `links` DISABLE KEYS */;
-INSERT INTO `links` VALUES (1,'Försök ta dig ut',1,2),(2,'Sitt kvar och lyssna på omgivingen',1,3),(3,NULL,2,3),(4,'Försök ta dig ut',3,4),(5,'Sitt kvar och lyssna på omgivingen',3,5),(6,'Försök ta dig ut',5,7),(7,'Fortsätt lyssna',5,6),(8,'Försök ta dig ut',6,7),(9,NULL,7,8),(10,'Hoppa i',8,9),(11,'\"Vänta lite, måste jag också?\"',8,10),(12,'Hoppa i',10,9),(13,'\"Eh...\"',10,11),(14,'Hoppa i',11,9),(15,NULL,9,12),(16,NULL,12,13),(17,'Dra dig tillbaka bakom mamma',13,14),(18,'Låtsas som om du inte hörde',13,15),(19,'Försök att tänka bort det',14,15),(20,'Gå till attack',14,18),(21,'Stirra chockat på ankan som bet dig',15,16),(22,'Spring hem',15,17),(23,'Spring hem',16,17),(24,'Bit tillbaka',16,18),(25,'Stå ut',17,101),(26,'Fly under natten',17,20),(27,NULL,18,20),(28,'Fly, ingen vill ändå ha dig',11,19),(29,NULL,19,20),(30,'Flyg över staketet',20,21),(31,NULL,21,101),(32,'Spring åt sidan',20,22),(33,NULL,22,23),(34,'Se dig omkring',23,24),(35,'Ta skydd under vattnet',23,25),(36,NULL,24,25),(37,NULL,25,26),(38,'Attackera hundarna',26,102),(39,'Spela död',26,27),(40,NULL,27,28),(41,NULL,28,29),(42,NULL,29,30),(43,'Flyg fram till svanarna',30,31),(44,'Stanna, du vill inte dö riktigt än',30,32),(45,NULL,31,33),(46,NULL,32,33),(47,NULL,33,103);
+INSERT INTO `links` VALUES (1,'Försök ta dig ut',1,2),(2,'Sitt kvar och lyssna på omgivingen',1,3),(3,NULL,2,3),(4,'Försök ta dig ut',3,4),(5,'Sitt kvar och lyssna på omgivingen',3,5),(6,'Försök ta dig ut',5,7),(7,'Fortsätt lyssna',5,6),(8,'Försök ta dig ut',6,7),(9,NULL,7,8),(10,'Hoppa i',8,9),(11,'\"Vänta lite, måste jag också?\"',8,10),(12,'Hoppa i',10,9),(13,'\"Eh...\"',10,11),(14,'Hoppa i',11,9),(15,NULL,9,12),(16,NULL,12,13),(17,'Dra dig tillbaka bakom mamma',13,14),(18,'Låtsas som om du inte hörde',13,15),(19,'Försök att tänka bort det',14,15),(20,'Gå till attack',14,18),(21,'Stirra chockat på ankan som bet dig',15,16),(22,'Spring hem',15,17),(23,'Spring hem',16,17),(24,'Bit tillbaka',16,18),(25,'Stå ut',17,101),(26,'Fly under natten',17,20),(27,NULL,18,20),(28,'Fly, ingen vill ändå ha dig',11,19),(29,NULL,19,20),(30,'Flyg över staketet',20,21),(31,NULL,21,101),(32,'Spring åt sidan',20,22),(33,NULL,22,23),(34,'Se dig omkring',23,24),(35,'Ta skydd under vattnet',23,25),(36,NULL,24,25),(37,NULL,25,26),(38,'Attackera hundarna',26,102),(39,'Spela död',26,27),(40,NULL,27,28),(41,NULL,28,29),(42,NULL,29,30),(43,'Flyg fram till svanarna',30,31),(44,'Stanna, du vill inte dö riktigt än',30,32),(45,NULL,31,33),(46,NULL,32,33),(47,NULL,33,103),(48,NULL,4,5);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,4 +79,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-11 15:40:29
+-- Dump completed on 2020-10-22  8:42:45
