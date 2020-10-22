@@ -34,6 +34,8 @@ main
   padding: 4.8rem
   background: white
   &--paper
+    opacity: 0
+    animation: fade-up 0.3s forwards
     &::before, &::after
       content: ''
       position: absolute
@@ -155,3 +157,11 @@ a
     font-size: 1.6rem
     font-weight: 400
     text-align: center
+
+@keyframes fade-up
+  0%
+    opacity: 0
+    transform: translateY(3.2rem)
+  100%
+    opacity: 1
+    transform: translateY(0)

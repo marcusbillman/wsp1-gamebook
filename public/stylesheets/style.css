@@ -27,23 +27,26 @@ main {
   margin: 0 auto;
   padding: 4.8rem;
   background: white; }
-  .container--paper::before, .container--paper::after {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 0;
-    right: 0;
-    height: 44px;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .container--paper::before {
-    top: 0;
-    transform: translateY(-100%);
-    background-image: url("/images/torn-paper-1.png"); }
-  .container--paper::after {
-    bottom: 0;
-    transform: translateY(100%) rotate(0.5turn);
-    background-image: url("/images/torn-paper-2.png"); }
+  .container--paper {
+    opacity: 0;
+    animation: fade-up 0.3s forwards; }
+    .container--paper::before, .container--paper::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      height: 44px;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .container--paper::before {
+      top: 0;
+      transform: translateY(-100%);
+      background-image: url("/images/torn-paper-1.png"); }
+    .container--paper::after {
+      bottom: 0;
+      transform: translateY(100%) rotate(0.5turn);
+      background-image: url("/images/torn-paper-2.png"); }
 
 h1 {
   font-family: 'Dancing Script', cursive;
@@ -148,5 +151,13 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     text-align: center; }
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3.2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=style.css.map */
