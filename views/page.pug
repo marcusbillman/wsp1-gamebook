@@ -3,7 +3,8 @@ extends layout
 block content
   .header
     h1.small Sida #{page.page_id}
-    a.button.button--small.button--restart(href='/1') Börja om
+    unless page.page_id == 1
+      a.button.button--small.button--restart(href='/1') Börja om
   each paragraph in page.body
     p= paragraph
   .button-wrapper
