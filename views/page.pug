@@ -4,7 +4,8 @@ block content
   .header
     h1.small Sida #{page.page_id}
     a.button.button--small.button--restart(href='/1') Börja om
-  p= page.body
+  each paragraph in page.body
+    p= paragraph
   .button-wrapper
     if page.is_ending
       a.button.button--home(href='/') Tillbaka till startsidan

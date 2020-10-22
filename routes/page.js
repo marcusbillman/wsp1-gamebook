@@ -4,7 +4,7 @@ const { query } = require('../models/db');
 
 router.get('/:id', async function(req, res, next) {
   try {
-    const page = await query(
+    let page = await query(
       'SELECT * FROM pages WHERE page_id = ?',
       req.params.id
     );
@@ -13,6 +13,8 @@ router.get('/:id', async function(req, res, next) {
       'SELECT * FROM links WHERE from_page_id = ?',
       req.params.id
     );
+
+    page[0].body = page[0].body.split("\n");
     
     res.render('page', {
       page: page[0],
