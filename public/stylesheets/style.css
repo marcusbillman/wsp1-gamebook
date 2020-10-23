@@ -65,6 +65,9 @@ p {
 a {
   color: inherit; }
 
+::selection {
+  background: #E9BF29; }
+
 .navbar {
   top: 3.2rem;
   max-width: 1400px;
