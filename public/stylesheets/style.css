@@ -37,12 +37,10 @@ body {
       background-size: cover;
       background-repeat: no-repeat; }
     .container--paper::before {
-      top: 0;
-      transform: translateY(-100%);
+      top: -44px;
       background-image: url("/images/torn-paper-1.png"); }
     .container--paper::after {
-      bottom: 0;
-      transform: translateY(100%) rotate(0.5turn);
+      bottom: -44px;
       background-image: url("/images/torn-paper-2.png"); }
 
 .header {
