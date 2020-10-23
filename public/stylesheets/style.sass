@@ -1,3 +1,4 @@
+/* ========== GLOBAL ========== */
 $clr-grey: #E8E8E8
 $clr-bronze: #974C06
 $clr-mustard: #E9BF29
@@ -21,12 +22,7 @@ body
   color: $clr-aubergine
   background: $clr-eggshell
 
-main
-  display: flex
-  align-items: center
-  flex: 1
-  padding-top: 10rem
-  padding-bottom: 6.8rem
+/* ========== CONTAINER AND STORY PAGE ========== */
 
 .container
   position: relative
@@ -56,6 +52,14 @@ main
       transform: translateY(100%) rotate(0.5turn)
       background-image: url('/images/torn-paper-2.png')
 
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 3.2rem
+
+/* ========== TYPOGRAPHY ========== */
+
 h1
   font-family: 'Dancing Script', cursive
   font-size: 5.6rem
@@ -73,6 +77,8 @@ a
 
 ::selection
   background: $clr-mustard
+
+/* ========== NAVBAR, MAIN AND FOOTER ========== */
 
 .navbar
   top: 3.2rem
@@ -106,6 +112,23 @@ a
     left: 12.8rem
   &::after
     right: 12.8rem
+
+main
+  display: flex
+  align-items: center
+  flex: 1
+  padding-top: 10rem
+  padding-bottom: 6.8rem
+
+.footer
+  margin-bottom: 2.4rem
+  &__text
+    margin: 0
+    font-size: 1.6rem
+    font-weight: 400
+    text-align: center
+
+/* ========== BUTTONS ========== */
 
 .button
   display: inline-flex
@@ -141,12 +164,6 @@ a
   &--quit::before
     content: 'close'
 
-.header
-  display: flex
-  align-items: center
-  justify-content: space-between
-  margin-bottom: 3.2rem
-
 .button-wrapper
   display: flex
   margin-top: 3.2rem
@@ -157,13 +174,7 @@ a
   .button:nth-child(2)
     margin-left: 2rem
 
-.footer
-  margin-bottom: 2.4rem
-  &__text
-    margin: 0
-    font-size: 1.6rem
-    font-weight: 400
-    text-align: center
+/* ========== ANIMATIONS ========== */
 
 @keyframes fade-up
   0%
@@ -172,3 +183,27 @@ a
   100%
     opacity: 1
     transform: translateY(0)
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and ( max-width: 750px )
+  .navbar
+    &__credit
+      display: none
+  .button-wrapper
+    flex-direction: column
+    .button:not(:first-child)
+      margin-left: 0
+      margin-top: 1.6rem
+
+@media screen and ( max-width: 600px )
+  .navbar
+    justify-content: center
+    .button--quit
+      display: none
+  main
+    padding-top: 12rem
+    padding-bottom: 8.8rem
+  .container--paper
+    padding-left: 1.6rem
+    padding-right: 1.6rem

@@ -1,3 +1,4 @@
+/* ========== GLOBAL ========== */
 html {
   font-size: 62.5%; }
 
@@ -15,13 +16,7 @@ body {
   color: #18005B;
   background: #FDEEB9; }
 
-main {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  padding-top: 10rem;
-  padding-bottom: 6.8rem; }
-
+/* ========== CONTAINER AND STORY PAGE ========== */
 .container {
   position: relative;
   width: 100%;
@@ -50,6 +45,13 @@ main {
       transform: translateY(100%) rotate(0.5turn);
       background-image: url("/images/torn-paper-2.png"); }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.2rem; }
+
+/* ========== TYPOGRAPHY ========== */
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 5.6rem;
@@ -68,6 +70,7 @@ a {
 ::selection {
   background: #E9BF29; }
 
+/* ========== NAVBAR, MAIN AND FOOTER ========== */
 .navbar {
   top: 3.2rem;
   max-width: 1400px;
@@ -101,6 +104,22 @@ a {
   .navbar::after {
     right: 12.8rem; }
 
+main {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-top: 10rem;
+  padding-bottom: 6.8rem; }
+
+.footer {
+  margin-bottom: 2.4rem; }
+  .footer__text {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center; }
+
+/* ========== BUTTONS ========== */
 .button {
   display: inline-flex;
   align-items: center;
@@ -135,12 +154,6 @@ a {
   .button--quit::before {
     content: 'close'; }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 3.2rem; }
-
 .button-wrapper {
   display: flex;
   margin-top: 3.2rem; }
@@ -151,14 +164,7 @@ a {
   .button-wrapper .button:nth-child(2) {
     margin-left: 2rem; }
 
-.footer {
-  margin-bottom: 2.4rem; }
-  .footer__text {
-    margin: 0;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: center; }
-
+/* ========== ANIMATIONS ========== */
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -166,5 +172,27 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+/* ========== MEDIA QUERIES ========== */
+@media screen and (max-width: 750px) {
+  .navbar__credit {
+    display: none; }
+  .button-wrapper {
+    flex-direction: column; }
+    .button-wrapper .button:not(:first-child) {
+      margin-left: 0;
+      margin-top: 1.6rem; } }
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: center; }
+    .navbar .button--quit {
+      display: none; }
+  main {
+    padding-top: 12rem;
+    padding-bottom: 8.8rem; }
+  .container--paper {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem; } }
 
 /*# sourceMappingURL=style.css.map */
