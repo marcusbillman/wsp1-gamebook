@@ -88,5 +88,5 @@
 ### Tisdag 3 november
 * Skrev [post mortem](https://github.com/marcusbillman/wsp1-gamebook/wiki/Post-mortem), vilket markerar slutet på projektet. Hej då!
 
-### 11 november
+### Onsdag 11 november
 * Åh, en till sak. Lade till dokumentationen i en mapp i repositoryt eftersom Jens ville ha det så.
